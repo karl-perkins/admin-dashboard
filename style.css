@@ -20,7 +20,30 @@
 }
 
 .sidebar {
+	padding: 1.5rem;
 	grid-area: sidebar;
+}
+
+.branding {
+	margin-bottom: 3rem;
+}
+
+.nav ul {
+	display: grid;
+	grid-auto-rows: 1fr;
+	gap: 1rem;
+	list-style-type: none;
+}
+
+.branding,
+.nav > ul > li {
+	display: flex;
+	align-items: center;
+}
+
+.branding > span,
+.nav > ul > li > span {
+	margin-right: 1rem;
 }
 
 .header {
@@ -29,4 +52,29 @@
 
 .main-content {
 	grid-area: main-content;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
