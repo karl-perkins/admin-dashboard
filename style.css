@@ -9,10 +9,9 @@
 	display: grid;
 	grid-template-rows: 1fr 4fr;
 	grid-template-columns: 1fr 3fr;
-	grid-template-areas: 
-		"sidebar header"
-		"sidebar main-content"
-	;
+	grid-template-areas:
+		'sidebar header'
+		'sidebar main-content';
 }
 
 .container > div {
@@ -47,7 +46,51 @@
 }
 
 .header {
+	padding: 1.5rem;
 	grid-area: header;
+}
+
+.header-top,
+.header-bottom {
+	display: grid;
+	grid-template-columns: 1fr repeat(3, auto);
+	gap: 1rem;
+	align-items: center;
+}
+
+.header-bottom {
+	margin-top: 2rem;
+}
+
+.search {
+	display: flex;
+	gap: 1rem;
+}
+
+.search > input[type='search'] {
+	width: 75%;
+	background-color: #e2e8f0;
+	border: none;
+	border-radius: 1rem;
+	
+}
+
+.welcome {
+	display: flex;
+}
+
+.welcome > img {
+	margin-right: 0.5rem;
+}
+
+button {
+	width: 75px;
+	height: 32px;
+	background-color: #1992d4;
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
 }
 
 .main-content {
@@ -55,26 +98,26 @@
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+	/* Support for IE. */
+	font-feature-settings: 'liga';
 }
