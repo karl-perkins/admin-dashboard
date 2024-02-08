@@ -53,20 +53,28 @@
 }
 
 .header {
-	padding: 1.5rem;
+	padding: 1rem 3rem;
 	grid-area: header;
 }
 
-.header-top,
-.header-bottom {
+.header-top {
 	display: grid;
 	grid-template-columns: 1fr repeat(3, auto);
 	gap: 1rem;
 	align-items: center;
 }
 
+.header-top img {
+	height: 32px;
+	width: 32px;
+}
+
 .header-bottom {
 	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: auto 1fr repeat(3, auto);
+	gap: 1rem;
+	align-items: center;
 }
 
 .search {
@@ -79,15 +87,21 @@
 	background-color: #e2e8f0;
 	border: none;
 	border-radius: 1rem;
-	
 }
 
-.welcome {
-	display: flex;
+.avatar-large {
+	width: 64px;
+	height: 64px;
 }
 
-.welcome > img {
-	margin-right: 0.5rem;
+.username,
+.greeting-small-text,
+.greeting-large-text  {
+	font-weight: 700;
+}
+
+.greeting-large-text {
+	font-size: 1.5rem;
 }
 
 button {
