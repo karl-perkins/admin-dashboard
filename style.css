@@ -94,7 +94,101 @@ button {
 }
 
 .main-content {
+	padding: 1.5rem;
 	grid-area: main-content;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		"projects annoucements"
+		"projects	trending";
+	gap: 2rem;
+	background-color: #e2e8f0;
+}
+
+h2 {
+	margin-bottom: .5rem;
+}
+
+.projects {
+	grid-area: projects;
+	display: flex;
+	flex-direction: column;
+}
+
+.project-card-wrapper {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.project-card {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: .5rem;
+	border-left: 8px solid #ecb63d;
+}
+
+.project-card-content {
+	flex: 1;
+}
+
+.project-card-icons {
+	align-self: flex-end;
+}
+
+.project-card-icons > span {
+	margin: .5rem;
+}
+
+.annoucements {
+	grid-area: annoucements;
+	display: flex;
+	flex-direction: column;
+}
+
+.trending {
+	grid-area: trending;
+	display: flex;
+	flex-direction: column;
+}
+
+.annoucement-wrapper, 
+.trending-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: #ffffff;
+}
+
+.annoucement {
+	flex: 1;
+}
+
+.annoucement:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.annoucement:not(:last-child) {
+	border-bottom: 1px solid grey;
+}
+
+.trending-card {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.trending-card > img {
+	height: 32px;
+	width: 32px;
+	margin-right: 0.5rem;
 }
 
 .material-icons {
