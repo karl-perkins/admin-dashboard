@@ -15,10 +15,6 @@
 		'sidebar main-content';
 }
 
-.container > div {
-	border: 1px solid black;
-}
-
 .sidebar {
 	padding: 1.5rem;
 	grid-area: sidebar;
