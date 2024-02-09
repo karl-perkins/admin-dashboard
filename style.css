@@ -64,11 +64,6 @@
 	align-items: center;
 }
 
-.header-top img {
-	height: 32px;
-	width: 32px;
-}
-
 .header-bottom {
 	margin-top: 2rem;
 	display: grid;
@@ -92,6 +87,11 @@
 .avatar-large {
 	width: 64px;
 	height: 64px;
+}
+
+.avatar-small {
+	width: 48px;
+	height: 48px;
 }
 
 .username,
@@ -128,7 +128,11 @@ button {
 }
 
 h2 {
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	color: grey;
 }
 
 .projects {
@@ -146,7 +150,7 @@ h2 {
 }
 
 .project-card {
-	padding: 1.5rem;
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
@@ -183,13 +187,14 @@ h2 {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem;
+	padding: 1.5rem;
 	border-radius: 1rem;
 	background-color: #ffffff;
 }
 
 .annoucement {
 	flex: 1;
+	padding-bottom: 1rem;
 }
 
 .annoucement:not(:first-child) {
@@ -197,7 +202,7 @@ h2 {
 }
 
 .annoucement:not(:last-child) {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid lightgray;
 }
 
 .trending-card {
@@ -206,10 +211,12 @@ h2 {
 	align-items: center;
 }
 
-.trending-card > img {
-	height: 32px;
-	width: 32px;
-	margin-right: 0.5rem;
+.trending-card .avatar-small {
+	margin-right: 1rem;
+}
+
+.trending-card-project {
+	color: grey;
 }
 
 .material-icons {
